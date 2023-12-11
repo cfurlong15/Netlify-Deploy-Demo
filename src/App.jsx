@@ -23,7 +23,7 @@ function App() {
   const loaded = () => {
     return gifs.map((gif, idx) => (
       <div key={idx}>
-        <h1>{gif.title}</h1>
+        <p>{gif.title}</p>
         <img src={gif.images["original"]["url"]} alt={gif.embed_url} />
       </div>
     ));
